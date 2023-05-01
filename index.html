@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <form id="survey-form">
+    <div class="content-1">
+      <label for="name" id="name-label">Name<input type="text" id="name" placeholder="Enter your name" required/></label><br><br>
+      <label for="email" id="email-label">Email<input type="email" id="email" placeholder="Enter your name" required/></label><br><br>
+      <label for="number" id="number-label">Age<input type="number" id="number" min="10" max="99" placeholder="10"/></label>
+    </div>
+    <div class="content-2">
+      <label for="dropdown">Which option best describes your current role?</label><br>
+      <select id="dropdown" name="dropdown">
+        <option value="">Select current role</option>
+        <option value="1">Student</option>
+        <option value="2">Full time job</option>
+        <option value="3">Teacher</option>
+        <option value="4">Others</option>
+      </select><br><br>
+      <p>Do you Enjoy Codings?</p>
+      <label for="yes"><input type="radio" id="yes" value="yes" name="yes-or-no" class="inline"/>Yes</label><br>
+      <label for="no"><input type="radio" id="no" value="no" name="yes-or-no" class="inline"/>No</label><br><br>
+      <label for="dropdown-2">What is your favorite subject?</label><br>
+      <select id="dropdown" name="dropdown">
+        <option value="">Select an option</option>
+        <option value="1">RDMS</option>
+        <option value="2">Programming</option>
+        <option value="3">Operation System</option>
+        <option value="4">Data Structures and Algorithm</option>
+      </select>
+    </div>
+    <div class="content-3">
+      <p>What are your hobbies?</p>
+      <label for=""><input type="checkbox" id="" value="check" class="inline"/>Basketball</label><br>
+      <label for=""><input type="checkbox" id="" value="check" class="inline"/>Playing Online Games</label><br>
+      <label for=""><input type="checkbox" id="" value="check" class="inline"/>Playing Instruments</label><br>
+      <label for=""><input type="checkbox" id="" value="check" class="inline"/>Watching Movies</label><br>
+      <label for=""><input type="checkbox" id="" value="check" class="inline"/>Listening Music</label><br>
+      <br><br>
+
+      <label for="comment">Any comments or suggestions?</label><br>
+      <textarea id="comment" rows="6" placeholder="Enter your comment here...">
+
+      </textarea>
+    </div>
+    <button type="submit" id="submit" value="Submit">Submit</button>
+  </form>
+</body>
+</html>
